@@ -1039,7 +1039,7 @@
         var output = '<ul>';
         var cont = 1;
         $.each(json, function (key, value) {
-            if (value.pickup == '')
+            /*if (value.pickup == '')
                 output += '<li>Pickup address in BOL ' + cont + ' can not be null</li>';
 
             if (value.pickup_number == '')
@@ -1050,13 +1050,13 @@
 
             if (value.drop_number == '')
                 output += '<li>Drop # in BOL ' + cont + ' can not be null</li>';
-
+*/
             if (value.bol_number == '')
                 output += '<li>BOL # in BOL ' + cont + ' can not be null</li>';
 
-            if ($('#shp_file_' + cont).val() == '') {
+            /*if ($('#shp_file_' + cont).val() == '') {
                 output += '<li>You must upload a file in BOL ' + cont + '</li>';
-            }
+            }*/
 
             cont++;
         });

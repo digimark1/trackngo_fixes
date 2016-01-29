@@ -641,6 +641,7 @@ class load extends MY_Controller {
                         'url_bol' => $load_id . '_bol_' . $shipments[$i]->bol_number . '.pdf',
                         'date_created' => date("Y-m-d H:i:s")
                     );
+					if(a == 1){}else{};
 
                     //insert shipments in database
                     $shp_id = $this->shipment_model->insert($shipment_data);
